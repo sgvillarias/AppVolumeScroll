@@ -23,15 +23,15 @@ UpdateTrayStartupCheckbox()
 
 #If GetKeyState("LWin", "P") && GetKeyState("Shift", "P")
 *WheelUp::
-    RunWait, %ComSpec% /c ""%svclPath%" /ChangeVolume focusedname +%volumeStep%", , Hide
+    RunWait, "%svclPath%" /ChangeVolume focusedname +%volumeStep%, , Hide
     return
 
 *WheelDown::
-    RunWait, %ComSpec% /c ""%svclPath%" /ChangeVolume focusedname -%volumeStep%", , Hide
+    RunWait, "%svclPath%" /ChangeVolume focusedname -%volumeStep%, , Hide
     return
 
 *MButton::
-    RunWait, %ComSpec% /c ""%svclPath%" /Switch focusedname", , Hide
+    RunWait, "%svclPath%" /Switch focusedname, , Hide
     return
 #If
 
