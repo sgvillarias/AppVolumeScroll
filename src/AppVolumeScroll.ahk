@@ -4,8 +4,8 @@
 SetBatchLines, -1
 
 ; Paths
-svclPath := A_ScriptDir . "\svcl.exe"
-configPath := A_ScriptDir . "\config.ini"
+svclPath := A_ScriptDir . "\src\svcl.exe"
+configPath := A_ScriptDir . "\config\config.ini"
 startupName := "VolumeScrollControl"
 userStartupPath := A_Startup . "\" . startupName . ".lnk"
 
